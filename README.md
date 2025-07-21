@@ -2,7 +2,53 @@ Projeto RobotFramework
 
 Esse projeto tem como o intuito realizar automações em robot via web e api através do curso da "Mayara Fernandes" na Udemy link: "https://www.udemy.com/course/automacao-de-testes-com-robot-framework-basico/?couponCode=PMNVD2025"
 
+
 Implementações Robot
+
+
+Projeto de Robot Framework
+
+Este projeto tem como objetivo realizar automações em robot framework o site https://www.saucedemo.com/v1/
+
+Instalações:
+
+Python
+Site: https://www.python.org/downloads/
+Baixar via browser e seguir instalação selecionando as opções
+Para verificar a versão do python: python --version
+Para verificar se esta no ambiente: pesquisa sobre a editar as variáveis de ambiente do sistema, abre a opção pesquisada do sistema, 
+segue as opções: Variáveis de ambiente > path > Editar > c:...\python\
+
+Robot Framework
+Site: https://robotframework.org/
+Abrir prompt CMD
+Verificar se o pip esta instalado: pip --version
+Executar o comando: pip install robotframework
+Obs: verificar se o robotframework foi instalado: robot --version
+
+VS Code IDE
+Site: https://code.visualstudio.com/download
+Baixar via browser e seguir instalação
+Extensões: RobotFramework Language; material icon theme; dracula theme
+
+Bibliotecas/libraries
+Site: https://github.com/robotframework/SeleniumLibrary/
+Selenium Library: rodar comando no cmd pip install --upgrade robotframework-seleniumlibrary
+Site: https://docs.robotframework.org/docs/different_libraries/requests
+Requests Library: rodar comando no cmd pip install robotframework-requests
+Obs: verificar bibliotecas instaladas: comando pip list
+
+Downloads Drivers
+Site: https://github.com/mozilla/geckodriver/releases
+Geckodriver: verificar a versão em ajuda/sobre o firefox no browser
+realizar o download da ultima versão disponível
+Site: https://developer.chrome.com/docs/chromedriver/downloads?hl=pt-br
+Chromedriver: verificar a versão em ajuda/sobre o chrome no browser
+realizar o download da versão do chrome
+Obs: colocar os drivers na pasta de script dentro da pasta python instalado localmente
+
+
+Inicio do Projeto
 
 
 Arquivo de testes.robot
@@ -37,6 +83,12 @@ Arquivo de resources.robot
 Comandos para rodar no terminal
     Todo comando começa por robot:
         robot -v BROWSER:firefox -i login_sucesso -d resultados swaglabs_testes.robot
+
+        rodar a suite:
+            robot -d resultados swaglabs_testes.robot
+
+        rodar o teste:
+            robot --test "Caso de Teste 02 - Pesquisa de um produto" swaglabs_testes.robot
     
     -v =  variavel
     Dúvidas: robot --help
