@@ -1,6 +1,6 @@
 Projeto RobotFramework
 
-Esse projeto tem como o intuito realizar automações em robot via web e api através do curso da "Mayara Fernandes" na Udemy link: "https://www.udemy.com/course/automacao-de-testes-com-robot-framework-basico/?couponCode=PMNVD2025"
+Esse projeto tem como o intuito realizar automações em robot framework via web com a biblioteca Selenium
 
 
 Implementações Robot
@@ -13,39 +13,44 @@ Este projeto tem como objetivo realizar automações em robot framework o site h
 Instalações:
 
 Python
-Site: https://www.python.org/downloads/
-Baixar via browser e seguir instalação selecionando as opções
-Para verificar a versão do python: python --version
-Para verificar se esta no ambiente: pesquisa sobre a editar as variáveis de ambiente do sistema, abre a opção pesquisada do sistema, 
-segue as opções: Variáveis de ambiente > path > Editar > c:...\python\
+    Site: https://www.python.org/downloads/
+        Baixar via browser e seguir instalação selecionando as opções
+        Para verificar a versão do python: python --version
+        Para verificar se esta no ambiente: pesquisa sobre a editar as variáveis de ambiente do sistema, abre a opção pesquisada do sistema, 
+        segue as opções: Variáveis de ambiente > path > Editar > c:...\python\
 
 Robot Framework
-Site: https://robotframework.org/
-Abrir prompt CMD
-Verificar se o pip esta instalado: pip --version
-Executar o comando: pip install robotframework
-Obs: verificar se o robotframework foi instalado: robot --version
+    Site: https://robotframework.org/
+        Abrir prompt CMD
+        Verificar se o pip esta instalado: pip --version
+        Executar o comando: pip install robotframework
+            Obs: verificar se o robotframework foi instalado: robot --version
 
 VS Code IDE
-Site: https://code.visualstudio.com/download
-Baixar via browser e seguir instalação
-Extensões: RobotFramework Language; material icon theme; dracula theme
+    Site: https://code.visualstudio.com/download
+        Baixar via browser e seguir instalação
+        Extensões: RobotFramework Language; material icon theme; dracula theme
 
 Bibliotecas/libraries
-Site: https://github.com/robotframework/SeleniumLibrary/
-Selenium Library: rodar comando no cmd pip install --upgrade robotframework-seleniumlibrary
-Site: https://docs.robotframework.org/docs/different_libraries/requests
-Requests Library: rodar comando no cmd pip install robotframework-requests
-Obs: verificar bibliotecas instaladas: comando pip list
+    Site: https://github.com/robotframework/SeleniumLibrary/
+        Selenium Library: rodar comando no cmd pip install --upgrade robotframework-seleniumlibrary
+    Site: https://docs.robotframework.org/docs/different_libraries/requests
+        Requests Library: rodar comando no cmd pip install robotframework-requests
+            Obs: verificar bibliotecas instaladas: comando pip list
 
 Downloads Drivers
-Site: https://github.com/mozilla/geckodriver/releases
-Geckodriver: verificar a versão em ajuda/sobre o firefox no browser
-realizar o download da ultima versão disponível
-Site: https://developer.chrome.com/docs/chromedriver/downloads?hl=pt-br
-Chromedriver: verificar a versão em ajuda/sobre o chrome no browser
-realizar o download da versão do chrome
-Obs: colocar os drivers na pasta de script dentro da pasta python instalado localmente
+    Site: https://github.com/mozilla/geckodriver/releases
+        Geckodriver: verificar a versão em ajuda/sobre o firefox no browser
+        realizar o download da ultima versão disponível
+    Site: https://developer.chrome.com/docs/chromedriver/downloads?hl=pt-br
+        Chromedriver: verificar a versão em ajuda/sobre o chrome no browser
+        realizar o download da versão do chrome
+            Obs: colocar os drivers na pasta de script dentro da pasta python instalado localmente
+
+Instalando YAML
+    Site: https://gist.github.com/GLMeece/79954b3ea2f8efa5f3ed5c2bd6a267b8
+        YAML: rodar comando no terminal pip install pyyaml
+            Obs: o yaml esta usando o data_pool do projeto aonde estão as informações de URL, Login, senha, etc. Caso de erro na sintaxe do yaml não reconhecendo a variável basta realizar clear algumas vezes no terminal, salvando o local que chama a variavél ou reiniciar o vscode.
 
 
 Inicio do Projeto
@@ -71,13 +76,14 @@ Arquivo de resources.robot
 
     Escrita de resources em implementação de "Settings"
         Library: Serve para buscar a biblioteca que será utilizada.
+        Variables: Serve para buscar a informação das variáveis salvas
 
     Escrita de resources em implementação de "Variables"
         Serve para declarações de valores fixos.
         Declaração de variavel = ${}
 
     Escrita de resources em implementação de "Keywords"
-        Titulo: Iniciado no começo da frase escostado no canto esquerdo.
+        Titulo: Iniciado no começo da frase encostado no canto esquerdo.
 
 
 Comandos para rodar no terminal
