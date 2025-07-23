@@ -1,1 +1,9 @@
-.resultados/
+# Ignore Python
+[Rr]esultados/
+[Ee]xemplos/
+
+
+*log
+*output.xml
+*report.html
+*selenium-screenshots
