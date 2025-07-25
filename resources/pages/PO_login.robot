@@ -2,8 +2,6 @@
 Library           SeleniumLibrary
 Variables         ../data_pool/DataPool_login.yaml
 
-*** Variables ***
-
 *** Keywords ***
 Acessar a home page do site "${TITLE}"
     Go To  url=${URL.homol}

@@ -21,10 +21,18 @@ Caso de Teste 02 - Adicionar produto ao carrinho
     [Documentation]    Esse teste realiza a adição de um produto ao carrinho
     ...                valida se o produto foi adicionado corretamente
     ...                e se o carrinho foi atualizado
-    [Tags]             busca_produtos  pesquisa
+    [Tags]             add_carrinho carrinho_vazio
     Login como usuário válido
     Verificar se o carrinho está vazio
     Retornar a home page do site "Swag Labs"
     Selecionar o produto "Sauce Labs Bolt T-Shirt"
     Adicionar o produto ao carrinho
     Verificar se o produto foi adicionado ao carrinho com sucesso
+
+Caso de Teste 03 - Remover produto do carrinho
+    [Documentation]    Esse teste realiza a remoção de um produto do carrinho
+    [Tags]             remove_carrinho
+    Login como usuário válido
+    Adicionar produto ao carrinho
+    Remover o produto do carrinho
+    Verificar se o carrinho está vazio
