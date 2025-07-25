@@ -23,7 +23,7 @@ Clicar no campo de senha "${KEY-PASSWORD}"
 
 Clicar no botão login "${LOGIN_BUTTON}"
     Click Element    id=${LOGIN_BUTTON}
-    Sleep   10s
+    Sleep   5s
 
 Login como usuário válido
     Acessar a home page do site "Swag Labs"

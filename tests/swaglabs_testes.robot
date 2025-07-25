@@ -1,7 +1,8 @@
 *** Settings ***
-Documentation     Essa suite realiza testes no site https://www.saucedemo.com/v1/
+Documentation     Essa suite realiza testes no site https://www.saucedemo.com
 Resource          ../resources/swaglabs_resources.robot
 Resource          ../resources/pages/PO_login.robot
+Resource          ../resources/keywords/KW_carrinho_compras.robot
 Test Setup      Abrir o navegador
 Test Teardown     Fechar o navegador
 
@@ -16,10 +17,14 @@ Caso de Teste 01 - Login com sucesso em swaglabs v1
     Clicar no botão login "login-button"
 
 
-Caso de Teste 02 - Pesquisa de um produto
-    [Documentation]    Esse teste verifica a pesquisa de um produto na Amazon
+Caso de Teste 02 - Adicionar produto ao carrinho 
+    [Documentation]    Esse teste realiza a adição de um produto ao carrinho
+    ...                valida se o produto foi adicionado corretamente
+    ...                e se o carrinho foi atualizado
     [Tags]             busca_produtos  pesquisa
     Login como usuário válido
-    # Digitar o nome de produto "Camiseta x" no campo de pesquisa
-    # Clicar no botão de pesquisa
-    # Verificar o resultado da pesquisa se está listando o produto pesquisado
+    Verificar se o carrinho está vazio
+    Retornar a home page do site "Swag Labs"
+    Selecionar o produto "Sauce Labs Bolt T-Shirt"
+    Adicionar o produto ao carrinho
+    Verificar se o produto foi adicionado ao carrinho com sucesso
