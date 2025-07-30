@@ -70,3 +70,15 @@ Caso de Teste 06 - Mensagem de erro Postal Code is required
     Preencher o campo "Last Name" com um valor válido
     Clicar no botão continue
     Verificar se a mensagem de erro "Error: Postal Code is required" é exibida
+
+Caso de Teste 07 - Concluir as informação do checkout com sucesso
+    [Documentation]    Esse teste verifica a conclusão das informações do checkout com sucesso
+    [Tags]             checkout_sucesso
+    Login como usuário válido
+    Adicionar produto ao carrinho
+    Clicar no botão checkout
+    Preencher o campo "First Name" com um valor válido
+    Preencher o campo "Last Name" com um valor válido
+    Preencher o campo "Postal Code" com um valor válido
+    Clicar no botão continue
+    Verificar se a página Checkout: Overview é exibida
