@@ -13,6 +13,8 @@ Retornar a home page do site "Swag Labs"
     Sleep    1s
     Click Element    ${BNT_ALL_ITEMS}
     Sleep    1s
+    
+Verificar se a home page do site "Swag Labs" é exibida
     Wait Until Element Is Visible    ${BODY_HOME_PAGE}
     Element Should Be Visible    ${BODY_HOME_PAGE}
 

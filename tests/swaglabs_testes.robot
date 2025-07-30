@@ -26,6 +26,7 @@ Caso de Teste 02 - Adicionar produto ao carrinho
     Login como usuário válido
     Verificar se o carrinho está vazio
     Retornar a home page do site "Swag Labs"
+    Verificar se a home page do site "Swag Labs" é exibida
     Selecionar o produto "Sauce Labs Bolt T-Shirt"
     Adicionar o produto ao carrinho
     Verificar se o produto foi adicionado ao carrinho com sucesso
@@ -82,3 +83,23 @@ Caso de Teste 07 - Concluir as informação do checkout com sucesso
     Preencher o campo "Postal Code" com um valor válido
     Clicar no botão continue
     Verificar se a página Checkout: Overview é exibida
+
+Caso de Teste 08 - Finalizar a compra com sucesso
+    [Documentation]    Esse teste verifica a finalização da compra com sucesso
+    [Tags]             compra_finalizada_sucesso
+    Login como usuário válido
+    Adicionar produto ao carrinho
+    Concluir as informação do checkout com sucesso
+    Clicar no botão finish
+    Verificar se a mensagem "Thank you for your order!" é exibida
+
+Caso de Teste 09 - retornar a home page do site "Swag Labs" após finalizar a compra
+    [Documentation]    Esse teste verifica o retorno à home page do site "Swag Labs
+    ...                " após finalizar a compra
+    [Tags]             back_home_bnt_
+    Login como usuário válido
+    Adicionar produto ao carrinho
+    Concluir as informação do checkout com sucesso
+    Finalizar a compra com sucesso
+    Clicar no botão back_home
+    Verificar se a home page do site "Swag Labs" é exibida

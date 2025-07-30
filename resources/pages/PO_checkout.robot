@@ -15,3 +15,6 @@ ${TXT_FIRST_NAME}   Test
 ${TXT_LAST_NAME}   User
 ${TXT_POSTAL_CODE}   12345
 ${TXT_CHECKOUT_OVERVIEW}   xpath=//*[text()="Checkout: Overview"]
+${BNT_FINISH}   id=finish
+${TXT_THANK_YOU_FOR_YOUR_ORDER}   xpath=//*[text()="Thank you for your order!"]
+${BNT_BACK_HOME}   id=back-to-products

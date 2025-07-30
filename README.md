@@ -1,14 +1,11 @@
-PROJETO DE ROBOT FRAMEWORK + SELENIUM
+# PROJETO DE ROBOT FRAMEWORK + SELENIUM
+>Este projeto tem como objetivo realizar realizar automações em robot framework via web com a biblioteca Selenium no site https://www.saucedemo.com/v1/
 
 
-
-Este projeto tem como objetivo realizar realizar automações em robot framework via web com a biblioteca Selenium no site https://www.saucedemo.com/v1/
-
-
-Instalações:
+#**Instalações:**
 
 
-Python
+**Python**
 
     Site: https://www.python.org/downloads/
         Baixar via browser e seguir instalação selecionando as opções
@@ -16,7 +13,7 @@ Python
         Para verificar se esta no ambiente: pesquisa sobre a editar as variáveis de ambiente do sistema, abre a opção pesquisada do sistema, 
         segue as opções: Variáveis de ambiente > path > Editar > c:...\python\
 
-Robot Framework
+**Robot Framework**
 
     Site: https://robotframework.org/
         Abrir prompt CMD
@@ -24,13 +21,13 @@ Robot Framework
         Executar o comando: pip install robotframework
             Obs: verificar se o robotframework foi instalado: robot --version
 
-VS Code IDE
+**VS Code IDE**
 
     Site: https://code.visualstudio.com/download
         Baixar via browser e seguir instalação
         Extensões: RobotFramework Language; material icon theme; dracula theme
 
-Bibliotecas/libraries
+**Bibliotecas/libraries**
 
     Site: https://github.com/robotframework/SeleniumLibrary/
         Selenium Library: rodar comando no cmd pip install --upgrade robotframework-seleniumlibrary
@@ -38,7 +35,7 @@ Bibliotecas/libraries
         Requests Library: rodar comando no cmd pip install robotframework-requests
             Obs: verificar bibliotecas instaladas: comando pip list
 
-Downloads Drivers
+**Downloads Drivers**
 
     Site: https://github.com/mozilla/geckodriver/releases
         Geckodriver: verificar a versão em ajuda/sobre o firefox no browser
@@ -48,14 +45,14 @@ Downloads Drivers
         realizar o download da versão do chrome
             Obs: colocar os drivers na pasta de script dentro da pasta python instalado localmente
 
-Instalando YAML
+**Instalando YAML**
 
     Site: https://gist.github.com/GLMeece/79954b3ea2f8efa5f3ed5c2bd6a267b8
         YAML: rodar comando no terminal pip install pyyaml
             Obs: o yaml esta usando o data_pool do projeto aonde estão as informações de URL, Login, senha, etc. Caso de erro na sintaxe do yaml não reconhecendo a variável basta realizar clear algumas vezes no terminal, salvando o local que chama a variavél ou reiniciar o vscode.
 
 
-Inicio do Projeto
+#**Inicio do Projeto**
 
 
 Arquivo de testes.robot
@@ -86,6 +83,10 @@ Arquivo de resources.robot
 
     Escrita de resources em implementação de "Keywords"
         Titulo: Iniciado no começo da frase encostado no canto esquerdo.
+
+Data_pool
+
+    Serve para guardar as informações sensivel como de login        
 
 
 Comandos para rodar no terminal

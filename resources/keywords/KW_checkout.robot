@@ -33,3 +33,24 @@ Preencher o campo "Postal Code" com um valor válido
 
 Verificar se a página Checkout: Overview é exibida
     Element Should Be Visible    ${TXT_CHECKOUT_OVERVIEW}
+
+Concluir as informação do checkout com sucesso
+    Clicar no botão checkout
+    Preencher o campo "First Name" com um valor válido
+    Preencher o campo "Last Name" com um valor válido
+    Preencher o campo "Postal Code" com um valor válido
+    Clicar no botão continue
+    Verificar se a página Checkout: Overview é exibida
+    
+Finalizar a compra com sucesso
+    Clicar no botão finish
+    Verificar se a mensagem "Thank you for your order!" é exibida
+
+Clicar no botão finish
+    Click Element    ${BNT_FINISH}
+
+Verificar se a mensagem "Thank you for your order!" é exibida
+    Element Should Be Visible    ${TXT_THANK_YOU_FOR_YOUR_ORDER}
+
+Clicar no botão back_home
+    Click Element    ${BNT_BACK_HOME}
