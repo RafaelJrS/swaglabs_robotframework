@@ -2,7 +2,7 @@
 >Este projeto tem como objetivo realizar realizar automações em robot framework via web com a biblioteca Selenium no site https://www.saucedemo.com/v1/
 
 
-# **Instalações:**
+## **Instalações:**
 
 
 **Python**
@@ -52,7 +52,7 @@
             Obs: o yaml esta usando o data_pool do projeto aonde estão as informações de URL, Login, senha, etc. Caso de erro na sintaxe do yaml não reconhecendo a variável basta realizar clear algumas vezes no terminal, salvando o local que chama a variavél ou reiniciar o vscode.
 
 
-# **Inicio do Projeto**
+## **Inicio do Projeto**
 
 
 **Arquivo de testes.robot**
@@ -96,7 +96,7 @@
 
     Pasta de arquivos para guardar as variaveis que estão sendo usadas nos comandos das keywords como xpath, css, text, entre outras.
 
-# **Comandos para rodar no terminal**
+## **Comandos para rodar no terminal**
 
 **Todo comando começa por robot:**
 
@@ -121,7 +121,7 @@
     Comentar as linhas de códigos: CTRL + ;
 
 
-*OBSERVAÇÕES:*
+### *OBSERVAÇÕES:*
 
     As informações implementadas para ação no robot são chamados de "keywords".
      A documentação do Selenium Library que conter sinal de "=", pré condiz que não precisa inserir informações obrigatória. Sem esse valor, esse campo deve conter a informação necessária, conforme mencionado na documentação "https://robotframework.org/SeleniumLibrary/SeleniumLibrary.html".

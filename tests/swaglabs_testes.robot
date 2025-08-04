@@ -93,10 +93,10 @@ Caso de Teste 08 - Finalizar a compra com sucesso
     Clicar no botão finish
     Verificar se a mensagem "Thank you for your order!" é exibida
 
-Caso de Teste 09 - retornar a home page do site "Swag Labs" após finalizar a compra
+Caso de Teste 09 - Retornar a home page do site "Swag Labs" após finalizar a compra
     [Documentation]    Esse teste verifica o retorno à home page do site "Swag Labs
     ...                " após finalizar a compra
-    [Tags]             back_home_bnt_
+    [Tags]             back_home_bntao_home
     Login como usuário válido
     Adicionar produto ao carrinho
     Concluir as informação do checkout com sucesso
