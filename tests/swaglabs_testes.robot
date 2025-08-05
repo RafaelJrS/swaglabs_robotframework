@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation     Essa suite realiza testes no site https://www.saucedemo.com
 Resource          ../resources/swaglabs_resources.robot
-Resource          ../resources/pages/PO_login.robot
+Resource          ../resources/keywords/KW_login.robot
 Resource          ../resources/keywords/KW_carrinho_compras.robot
 Resource          ../resources/keywords/KW_checkout.robot
 Test Setup      Abrir o navegador
@@ -13,8 +13,8 @@ Caso de Teste 01 - Login com sucesso em swaglabs v1
     ...                valida se o retorno do site esta correto
     [Tags]             login_sucesso
     Acessar a home page do site "Swag Labs"
-    Clicar no campo de usuário "user-name"
-    Clicar no campo de senha "password"
+    Clicar no campo de usuário "user-name" preenchendo com usuário válido
+    Clicar no campo de senha "password" preenchendo com senha válida
     Clicar no botão login "login-button"
 
 
@@ -103,3 +103,12 @@ Caso de Teste 09 - Retornar a home page do site "Swag Labs" após finalizar a co
     Finalizar a compra com sucesso
     Clicar no botão back_home
     Verificar se a home page do site "Swag Labs" é exibida
+
+Caso de Teste 10 - Mensagem de usuário bloqueado ao tentar logar
+    [Documentation]    Esse teste verifica a mensagem de erro ao tentar logar com um usuário
+    [Tags]             login_bloqueado
+    Acessar a home page do site "Swag Labs"
+    Clicar no campo de usuário "user-name" preenchendo com usuário bloqueado
+    Clicar no campo de senha "password" preenchendo com senha válida
+    Clicar no botão login "login-button"
+    Verificar se a mensagem de erro "Epic sadface: Sorry, this user has been locked out." é exibida

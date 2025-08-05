@@ -8,3 +8,4 @@ user_data:
     homol:
         user_name: standard_user
         password: secret_sauce
+        blocked_user: locked_out_user
