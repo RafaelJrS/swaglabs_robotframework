@@ -1,9 +1,53 @@
 # PROJETO DE ROBOT FRAMEWORK + SELENIUM
+
+![Robot Framework](https://img.shields.io/badge/-Robot-05122A?style=flat&logo=robot-framework)&nbsp;
+
 >Este projeto tem como objetivo realizar realizar automações em robot framework via web com a biblioteca Selenium no site https://www.saucedemo.com/v1/
 
 
-## **Instalações:**
+robot --outputdir resultados tests/swaglabs_testes.robot
 
+## 🚀 Tecnologias e Ferramentas
+
+* **Linguagem:** Python
+* **Framework de Teste:** RobotFramework
+* **Bibliotecas** Selenium, Request
+
+## 🎯 Escopo dos Testes
+
+O projeto cobrirá os seguintes fluxos de usuário:
+- [ ] Testes de Login (válido, usuário bloqueado).
+- [ ] Verificar seleção de produtos.
+- [ ] Carrinho de compras vazio.
+- [ ] Mensagens de erro.
+- [ ] Adição e remoção de produtos do carrinho de compras.
+- [ ] Realização de fluxo completo de checkout.
+
+## 📂 Estrutura de Pastas
+
+O projeto segue a estrutura Separation of Concerns no RobotFramework, organizando pastas, arquivos e keywords por resposabilidade. 
+De forma que cada parte do projeto resolva uma necessidade especifica.
+
+/resources
+
+/data_pool (Massa de dados fixa para os testes como: url, login, senha)
+
+/keywords (Aonde aonde ficam as keywords de estrutura das frases criadas)
+
+/libs (Ficam as funções auxiliares)
+
+/pages (Aonda estão os elementos da pagina para utilizar nas keywords)
+
+/tests (Agrupa as suites com os cenários de testes)
+
+
+## ⚙️ Como Executar o Projeto
+
+**Clone o repositório**
+
+    git clone https://github.com/RafaelJrS/swaglabs_robotframework.git
+
+## Instalações:
 
 **Python**
 
@@ -52,7 +96,8 @@
             Obs: o yaml esta usando o data_pool do projeto aonde estão as informações de URL, Login, senha, etc. Caso de erro na sintaxe do yaml não reconhecendo a variável basta realizar clear algumas vezes no terminal, salvando o local que chama a variavél ou reiniciar o vscode.
 
 
-## **Inicio do Projeto**
+
+## **Entendendo o Projeto**
 
 
 **Arquivo de testes.robot**
@@ -111,6 +156,12 @@
     -v =  variavel
 
     Dúvidas: robot --help
+
+    Rodar um teste especifico e salvar as informações de output, log e report desntro da pasta libs
+    robot --outputdir resources/libs --test "Cole seu cenário de teste aqui" tests/swaglabs_testes.robot
+
+    Após rodar o teste de output, dentro da pasta resources/libs, rodar comando no terminal
+    python gerar_pdf_evidencias.py    
 
 **Rodar comandos fora do VSCode direto no CMD do Windows**
 

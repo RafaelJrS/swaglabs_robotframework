@@ -11,6 +11,6 @@ Abrir o navegador
     Maximize Browser Window
 
 Fechar o navegador
-    Capture Page Screenshot
+    # Capture Page Screenshot
     Close Browser
 
