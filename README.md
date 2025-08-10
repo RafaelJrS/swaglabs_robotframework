@@ -5,8 +5,6 @@
 >Este projeto tem como objetivo realizar realizar automações em robot framework via web com a biblioteca Selenium no site https://www.saucedemo.com/v1/
 
 
-robot --outputdir resultados tests/swaglabs_testes.robot
-
 ## 🚀 Tecnologias e Ferramentas
 
 * **Linguagem:** Python
